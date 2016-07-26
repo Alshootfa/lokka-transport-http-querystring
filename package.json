@@ -1,10 +1,10 @@
 {
-  "name": "lokka-transport-http",
+  "name": "lokka-transport-http-querystring",
   "version": "1.4.0",
-  "description": "Isomorphic HTTP Transport for Lokka",
+  "description": "Isomorphic HTTP Transport for Lokka that uses query string instead of POST body",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kadirahq/lokka-transport-http.git"
+    "url": "https://github.com/occamzrazor/lokka-transport-http-querystring.git"
   },
   "license": "MIT",
   "options": {

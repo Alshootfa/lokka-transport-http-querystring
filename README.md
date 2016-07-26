@@ -1,24 +1,25 @@
-# lokka-transport-http
+# lokka-transport-http-querystring
 
-Isomorphic HTTP Transport Layer for [Lokka](https://github.com/kadirahq/lokka)
+Isomorphic HTTP Transport Layer for [Lokka](https://github.com/kadirahq/lokka).
+Uses a query string in conjunction with a *GET* request to facilitate CORS
 
 ---
 
-This is a [graphql-express](https://github.com/graphql/express-graphql) compatible transport layer for [Lokka](https://github.com/graphql/express-graphql).
+This is a [graphql-express](https://github.com/graphql/express-graphql) compatible transport layer for [Lokka](https://github.com/kadirahq/lokka).
 
 ## Basic Usage
 
 Install the package:
 
 ```
-npm i --save lokka-transport-http
+npm i --save lokka-transport-http-querystring
 npm i --save lokka
 ```
 
 This is how to send request to Facebook's [SWAPI GraphQL Demo](http://graphql-swapi.parseapp.com/).
 
 ```js
-import HttpTransport from 'lokka-transport-http';
+import HttpTransport from 'lokka-transport-http-querystring';
 const transport = new HttpTransport('http://graphql-swapi.parseapp.com/');
 transport.send(`
     {
